@@ -43,4 +43,4 @@ python train.py --model <model> --datasets <list of data>
 python test.py --model <model> --test_datasets <list of data>
 ```
 
-waveletdt is our proposed model trained with $L_{wo}$ and waveletganp is our proposed model trained with $L_{wp}$
+waveletdl is our proposed model trained with $L_{wo}$ and waveletganp is our proposed model trained with $L_{wp}$
