@@ -16,15 +16,22 @@ pip install .
 You need save Mayo Clinic dataset properly.
 By default, we located our project repository and mayo clinic dataset as follows:
 
-.../data/denoising/train/mayo/full_1mm
-|                         /full_3mm
-|                         /quarter_1mm
-|                         /quarter_3mm
-   /data/denoising/test/mayo/full_1mm
-   |                         /full_3mm
-|                         /quarter_1mm
-|                         /quarter_3mm
-|
+data <br/>
+├── denoising <br/>
+│   ├── train <br/>
+│   │   └── mayo <br/>
+│   │       ├── full_1mm <br/>
+│   │       ├── full_3mm <br/>
+│   │       ├── quarter_1mm <br/>
+│   │       └── quarter_3mm <br/>
+│   └── test <br/>
+│       └── mayo <br/>
+│           ├── full_1mm <br/>
+│           ├── full_3mm <br/>
+│           ├── quarter_1mm <br/>
+│           └── quarter_3mm <br/>
+works ── wavelet-ldct-denoising <br/>
+
 ## Running the code
 
 * Training the model
@@ -36,4 +43,4 @@ python train.py --model <model> --datasets <list of data>
 python test.py --model <model> --test_datasets <list of data>
 ```
 
-waveletdt is our propose model trained with $L_{wo}$ and waveletganp is our proposed model trained with $L_{wp}$
+waveletdt is our proposed model trained with $L_{wo}$ and waveletganp is our proposed model trained with $L_{wp}$
